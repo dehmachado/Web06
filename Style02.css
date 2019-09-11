@@ -1,0 +1,60 @@
+h1{
+    font-style: italic;
+    color: aliceblue;
+    font-size: 4em;
+}
+
+
+.center{
+    text-align: center;
+    text-decoration: line-through;
+}
+
+#fundo{
+    background-image: url(https://static.tumblr.com/820ce4478b5ca79faff71a6efb3026d4/pzhkz5o/5lFooat9z/tumblr_static_filename_640_v2.gif); 
+    background-attachment: fixed;
+}
+
+
+
+#branco{
+    color: white;
+    size: 20%;
+}
+
+h3{
+    text-decoration: line-through;
+    font-size: 2em;
+}
+#rosa{
+    color: rgb(243, 106, 197);
+    size: 20%;
+}
+
+#personagens {
+    margin-left: 10em;
+    margin-right: 10em; 
+
+
+}
+
+.person{
+    width: 460px;
+    height: 460px;
+    border: 10px solid rgb(163, 156, 156);
+    box-sizing:border-box;
+}
+
+#mini {
+    margin-left: 10em;
+    margin-right: 10em; 
+
+
+}
+
+.personMini{
+    width: 230px;
+    height: 230px;
+    box-sizing:border-box;
+}
+
