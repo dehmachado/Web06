@@ -1,0 +1,223 @@
+  
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Avaliação Bimestral</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script  type="application/javascript" src="js/bootstrap.min.js"></script>
+
+    </head>
+        
+
+    <body id="fundo" style="height: 0%">
+        <main>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+
+                    <div class="girls">
+                        
+                        <a href="https://pt.wikipedia.org/wiki/Angelina_Jolie">
+                            <img src="https://s2.glbimg.com/miac5krWvHCemWomV6mBTAvY6iQ=/e.glbimg.com/og/ed/f/original/2018/03/16/angelina_jolie.jpg" width="300px" height="300px"  alt="Angelina Jolie">
+                        </a>
+                    
+                        <a href="https://pt.wikipedia.org/wiki/Cate_Blanchett">
+                            <img src="https://i.pinimg.com/236x/4b/07/74/4b077413808b5fa7ad2d543ac17853fe--photography-portraits-white-photography.jpg" width="300px" height="300px"  alt="Cate Blanchett ">
+                        </a>
+                    
+                        <a href="https://pt.wikipedia.org/wiki/Sandra_Bullock#targetText=Sandra%20Annette%20Bullock%20(%20%2F%CB%88b,e%20Hope%20Floats%20(1998).">
+                            <img src="https://i.pinimg.com/originals/fb/4b/85/fb4b853cb620a4b659453ff0d48bc104.jpg" width="300px" height="300px"  alt="Sandra Bullock">
+                        </a>
+                    
+                        <a href="https://pt.wikipedia.org/wiki/Natalie_Portman">
+                            <img src="https://i.pinimg.com/originals/32/25/29/32252985f54f6c8b174b633603455358.jpg" width="300px" height="300px" alt="Natalie Portman">
+                        </a>
+                            
+                    </div>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Opções</span>
+
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://i.pinimg.com/originals/5a/5b/ea/5a5beaa490f42b57a3687cd38e1f927a.png" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="http://dammit.com.br/wp-content/uploads/2014/06/Lana-BW.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/e/9/7/8/e978e0246803f2fbcde5a10c2cad2976.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <section>
+                <div class="formulario" style="margin-left:40%; padding:10% 50px; height:10%; width: 250px">
+                    
+                    <form id="formu" name="formCadastro" method="POST" onsubmit="return validar()">
+                        
+                        <h3><strong>Cadastro</strong></h3>
+                        <label><strong>Nome</strong></label>
+                        <input class="inp" type="text" name="nome" placeholder="Informe o nome" maxlength="35"autofocus><br>
+                        
+                        <label><strong><br>CPF</strong></label>
+                        <input class="inp" type="number" name="cpf" placeholder="Informe o CPF" autofocus><br>
+                        
+                        <label ><strong><br>Sexo</strong></label>
+                        <input type="radio" name="sexo" value="feminino" checked="checked" />Feminino
+                        <input type="radio" name="sexo" value="masculino" checked="checked" />Masculino<br>
+                        
+                        <label ><strong><br>Data de Nascimento<br></strong></label>
+                        <input type="date" name="dataNasc" placeholder="Informe a Data de Nascimento" autofocus><br>
+
+                        <label ><strong><br>E-mail<br></strong></label>
+                        <input type="email" name="email" autocomplete="off" autofocus><br>
+
+                        <label><strong><br>Estado</strong></label>
+                        <select name="estado" id="">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais;</option>
+                            <option value="AC">Acre</option>
+                        </select><br><br>
+
+                        <input id="botao" type="reset" name="cancela" value="Cancelar">
+                        
+
+                    </form><br>
+
+                    <h3>Lista de Desejos</h2>
+
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Viajar</th>
+                            <th>Quando</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Paris</td>
+                            <td>Agora</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Espanha</td>
+                            <td>Mais rapido possivel</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Italia</td>
+                            <td>Nos sonhos</td>
+                        </tr>
+                        
+                    </table>
+
+                </div>
+            </section>
+            
+  
+        </main>
+
+        <video width="600" controls>
+            <source src="https://www.youtube.com/watch?v=xlf9e9PnJZM">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <Footer>            
+            <h3> &COPY; Debora Machado 2019</h3>        
+        </Footer>
+
+    </body>
+
+    <script>
+
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+
+        
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+        
+        function validar(){
+            var formulario = document.forms["formCadastro"];
+            var nome = formulario.nome.value;
+            var cpf = formulario.cpf.value;
+            var sexo = formulario.sexo.value;
+            var dataNas = formulario.dataNasc.value;
+            var email = formulario.email.value;
+            var estado = formulario.estado.value;
+
+            var erro = false;  //false = não tem erro
+            if(nome.indexOf(" ") == -1){
+                alert("Preencha o nome completo!");
+                erro = true;  //erro identificado
+            }
+            if(cpf.lenght != 11){
+                alert("Preencha o CPF corretamente!");
+                erro = true;
+            }
+            if(dataNas.indexOf(" ") == -1){
+                alert("Preencha a data de nascimento!");
+                erro = true;  //erro identificado
+            }
+            if(email.indexOf(" ") == -1){
+                alert("Preencha o email!");
+                erro = true;  //erro identificado
+            }
+            if(estado.indexOf(" ") == -1){
+                alert("Escolha um estado!")
+                erro = true;
+            }
+            if(erro){    //se houver erro, retorna falso
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000); 
+        }
+
+    </script>
+
+</html>
+
+
